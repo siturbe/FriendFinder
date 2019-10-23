@@ -1,0 +1,27 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "Compatibility Application built to test knowledge of Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siturbe/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siturbe/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/siturbe/FriendFinder#readme",
+  "dependencies": {
+    "chosen": "0.0.2",
+    "chosen-js": "^1.8.7",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
