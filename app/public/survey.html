@@ -197,15 +197,15 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <button type="button" class="close" class="closeBtn" data-dismiss="modal">×</button>
                     <h2 class="modal-title"><strong>Best Match</strong></h2>
                   </div>
                   <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                    <img id="match-img" src="" alt="No Image Provided" height='200px' width='auto'>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button class='closeBtn' type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
                 </div>
           
@@ -276,7 +276,6 @@
                     ]
                   };
 
-                  console.log(userData);
           
                   // AJAX post the data to the friends API.
                   $.post("/api/friends", userData, function(data) {
@@ -292,11 +291,15 @@
                 } else {
                   alert("Please fill out all fields before submitting!");
                 }
+
+                
+
               });
+
+              $('.closeBtn').on('click', function(event){
+                  location.reload();
+              })
             </script>
-          
-          
-          
           
           </body>
 
